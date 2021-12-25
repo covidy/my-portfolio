@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "project": {
+    "name": "studio"
+  },
+  "api": {
+    "projectId": "88n6t6tg",
+    "dataset": "wilfolio"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
